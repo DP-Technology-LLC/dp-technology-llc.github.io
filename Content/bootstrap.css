@@ -6888,6 +6888,10 @@ button.bg-dark:focus {
   flex-shrink: 1 !important;
 }
 
+.fw-bold {
+    font-weight: bold;
+}
+
 .justify-content-start {
   -ms-flex-pack: start !important;
   justify-content: flex-start !important;

@@ -22,11 +22,33 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#tasks">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#settings">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#known issues">Known Issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header class="bg-primary text-white">
         <div class="container text-center">
-            <h1>Welcome to Roku Control Center from DP Technology LLC</h1>
+            <h1>Roku Control Center from DP Technology LLC</h1>
         </div>
     </header>
     <section id="about">
@@ -34,7 +56,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About the App</h2>
-                    <p class="lead">Roku Control Center from DP Technology LLC was created to improve a user's experience with their Roku devices. As long as your device is connected to the same private network as a Roku Device this app can communicate with it!  This app was created as a passion project and was not developed by Roku, Inc nor anybody associated with Roku, Inc nor any of the Channel Owners within the lineup within the Rokuverse.  You can even use this app on older devices, if you can't find this app in your respective store check here(coming soon)! Check in later as we plan on providing more information on the app including guides, tips and tricks!  Thank you for stopping by we hope you enjoy the app!</p>
+                    <p class="lead">Roku Control Center from DP Technology LLC (RCC) was created to improve a user's experience with their Roku devices. As long as your device is connected to the same private network as a Roku Device this app can communicate with it!  This app was created as a passion project and was not developed by Roku, Inc nor anybody associated with Roku, Inc nor any of the Channel Owners within the lineup within the Rokuverse.  You can even use this app on older devices, if you can't find this app in your respective store check here(coming soon)! Check in later as we plan on providing more information on the app including guides, tips and tricks!  Thank you for stopping by we hope you enjoy the app!</p>
                 </div>
             </div>
         </div>
@@ -71,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section id="settings" class="bg-light">
+    <section id="settings">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -107,13 +129,17 @@
             </div>
         </div>
     </section>
-    <section id="faqs">
+    <section id="faqs" class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>FAQs</h2>
+                    <ul >
+                        <li class="fw-bold">Why can RCC not see my Roku Device?</li>
+                        If you are on the same private network and your Roku Device allows mobile control, you shouldn't run into issues.  If you still are, open a web browser on your device and enter the following URL [http:{your Roku's IP address}:8060/query/media-player].  If you do not get a web page in return, then something outside of the RCC app is preventing the app from communicating with the Roku Device.  Make sure "<a href="https://support.roku.com/article/115001480188">Control by Mobile Apps</a>" is not disabled on your Roku Device.
+                    </ul>
                     <ul>
-                        <li>Coming soon.</li>
+                        <li class="fw-bold">More Coming soon.</li>
                     </ul>
                 </div>
             </div>
@@ -129,6 +155,16 @@
                         <li>On most newer devices, there is an additional battery saver layer that blocks network traffic. Tasks running in background may run but won't be able to connect to Roku devices unless your device is plugged into a power source.</li>
                         <li>Random, hopefully not too often, bugs.</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p class="lead">Please feel free contact us regarding RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery">here</a>!</p>
                 </div>
             </div>
         </div>
