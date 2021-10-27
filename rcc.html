@@ -304,9 +304,14 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>FAQs</h2>
-                    <ul >
+                    <ul>
                         <li class="fw-bold">Why can RCC not see my Roku Device?</li>
-                        If you are on the same private network and your Roku Device allows mobile control, you shouldn't run into issues.  If you still are, open a web browser on your device and enter the following URL [http://{your Roku's IP address}:8060/query/media-player].  If you do not get a web page in return, then something outside of the RCC app is preventing the app from communicating with the Roku Device.  Make sure "<a href="https://support.roku.com/article/115001480188">Control by Mobile Apps</a>" is not disabled on your Roku Device.
+                        If you are on the same private network and your Roku Device allows mobile control, you shouldn't run into issues.  If you still are, open a web browser on your device and enter the following URL [http://{your Roku's IP address}:8060/query/media-player].  If you do not get a web page in return, then something outside of the RCC app is preventing the app from communicating with the Roku Device.  Make sure "
+                        <a href="https://support.roku.com/article/115001480188">Control by Mobile Apps</a>" is not disabled on your Roku Device.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">The App crashed while a task was running, the RCC Running Tasks notification is still in the tray and I cannot get rid of it. How can I remove it?</li>
+                        On some devices you can access an app's notifications settings from the Notification Tray. If you can go there turn Notifications off and then if you want turn them back on.
                     </ul>
                     <ul>
                         <li class="fw-bold">More Coming soon.</li>
@@ -323,6 +328,7 @@
                     <ul>
                         <li>When connectivity to devices is weak, tasks may run into issues.</li>
                         <li>On most newer devices, there is an additional battery saver layer that blocks network traffic. Tasks running in background may run but won't be able to connect to Roku devices unless your device is plugged into a power source.</li>
+                        <li>Running too many concurrent tasks may cause some stability issues.</li>
                         <li>Random, hopefully not too often, bugs.</li>
                     </ul>
                 </div>
