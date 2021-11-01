@@ -45,15 +45,15 @@
     </nav>
     <header class="bg-primary text-white">
         <div class="container text-center">
-            <h1>Number Pad</h1>
+            <h1>Link Launcher</h1>
         </div>
     </header>
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>About Number Pad</h2>
-                    <p class="lead">The Number Pad is a nice and quick way to send number commands to your Roku Device. If you watch a lot of Live content within a channel, this functionality allows you to quickly jump from one numbered channel to another without having to scroll your way to it.</p>
+                    <h2>About Link Launcher</h2>
+                    <p class="lead">The Link Launcher allows you to play content directly on your Roku Device from a simple URL.  It can also create and run a RCC task from a rokucc.com link (see FAQ).  For example if someone wanted you to watch a show on The Roku Channel, they can send you the URL and RCC can launch the content directly to your Roku Device.  RCC </p>
                 </div>
             </div>
         </div>
@@ -65,7 +65,37 @@
                     <h2>FAQs</h2>
                     <p class="lead"></p>
                     <ul>
-                        <li class="fw-bold">Coming Soon</li>
+                        <li class="fw-bold">How does the Link Launcher work?</li>
+                        If you have a URL of a show that you can watch in a web browser, chances are the URL has a content id used for the show.  Some channels use the same content id whether you are watching in a web browser or on your Roku Device.  If the content ids match we can parse the id out and use it to directly launch your content on your Roku Device.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">When I open a URL using RCC, I get a prompt saying "More Info". What does that mean?</li>
+                        Most times this means RCC needs to know the Content Type of your content.  Your Roku Device needs to know if the id you are sending is a movie, episode, the season id or even the series id.  Hopefully the person sending it to you lets you know what it is.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">What Roku Channels are supported?</li>
+                        Below is a list of Roku Channels are supported.  There are 10,000+ channels in the Roku-verse, if you know of one that uses the same content ids, see FAQ above, let us know and we will see if we can support it.
+                        <ul>
+                            <li>The Roku Channel</li>
+                            <li>Netflix</li>
+                            <li>Tubi</li>
+                            <li>Peacock TV*</li>
+                            Content ids for individual episodes work, as opposed to content ids for a series.
+                            <li>YouTube</li>
+                            <li>Amazon Prime Video*</li>
+                            <li>Hopefully more will be added as more channels get tested.</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li id="rokucc.com_link" class="fw-bold">What is a rokucc.com link and why did somebody send it to me instead of a URL for the channel?</li>
+                        Rather than sending the URL of the content provider (therokuchannel.roku.com, netflix.com, tubitv.com, etc...), somebody may send you a rokucc.com link.  This link contains all the data necessary to start a RCC task.  Right now only the Launch Task is supported but more RCC Tasks will be available in future releases.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">When I receive a rokucc.com link I see an additional button labeled Save Task, is that different than Save Playable Item?</li>
+                        Yes.  When you tap Save Playable Item, RCC will create a record in your list of Playable Items.  If you tap Save Task, RCC will create a Playable Item (if not saved already) and create a record in your list of Saved Tasks.  As of right now only Launch Tasks are supported by Link Launcher but all RCC tasks will eventually be shareable.
+                    </ul>
+                    <ul>
+                        <li>More Coming Soon</li>
                     </ul>
                 </div>
             </div>
@@ -76,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Demo Videos</h2>
-                    <p class="lead">Below are videos on how to use the Number Pad</p>
+                    <p class="lead">Below are videos on how to use the Link Launcher</p>
                     <ul>
                         <li class="fw-bold">Coming Soon</li>
                     </ul>
@@ -101,7 +131,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Contact us</h2>
-                    <p class="lead">Please feel free to contact us regarding the Number Pad feature on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Number%20Pad">here</a>!</p>
+                    <p class="lead">Please feel free to contact us regarding the Link Launcher feature on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Link%20Launcher">here</a>!</p>
                 </div>
             </div>
         </div>

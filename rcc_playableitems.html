@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="DP Technology LLC">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="Content/scrolling-nav.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">DP Technology LLC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#faqs">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#tasks_functions">Tasks/Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#known issues">Known Issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white">
+        <div class="container text-center">
+            <h1>Playable Items</h1>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About Playable Items</h2>
+                    <p class="lead">Playable Items help build the command or commands that will be sent to a Roku Device.  A Playable Item can be nothing more than a way to launch a Channel or it can be used to play Content directly within a channel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faqs" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Properites of a Playable Item</h2>
+                    <p class="lead"></p>
+                    <ul>
+                        <li class="fw-bold">Name</li>
+                        A free text entry for you to give your Playable Item a name.  It is not a unique field so if you type who would name all your kids or pets the same name, go for it.
+                        <li class="fw-bold">Channel</li>
+                        A drop down selection that is based on the installed channels of the Roku Devices you created.  If you installed a new channel after you created your device, the new channel may not be in this list.  Edit your device and save, RCC will fetch any new channels installed.
+                        <li class="fw-bold">Content Id</li>
+                        A free text entry for the id of the content you wish to watch.  This value may not be available to you, but if you got one go ahead and see if it will work!  With a channel selected you can see if the channel has a way for you to get the Content Id, if the channel is supported RCC will step you through what you need to do.
+                        <li class="fw-bold">Content Type</li>
+                        A drop down selection that works with Content Id.  The intent of this field is to smartly show what you want.  For example if you provide a Content Id of Season 2 Episode 3 of a show, this field could change what you actually see.  If Content Type = 'episdoe', you will see that episode.  If Content Type = 'series' you may not see S02E03, but instead the episode you last watched from the series.  ***This is all dependent on the Developer of the Roku Channel so it may not function this way for your particular content.
+                        <li class="fw-bold">Post Launch Command List</li>
+                        A free text entry for you to send commands after RCC has given your Roku Device what to launch.  See here for info about this field.
+                        <li class="fw-bold">Hidden</li>
+                        A Checkbox that lets you categorize this item as hidden.  In the Playable Items list, you can toggle whether you see the hidden items or not.  This value is useful if you build a lot of items that you tend to use but don't want them clogging up your list.
+                        <li class="fw-bold">Archived</li>
+                        A Checkbox that lets you categorize this item as archived.  Similar to hidden it allows you to keep a Playable Item without it clogging up your list.  Use Archive when a Roku Channel no longer offers the content but you want to keep it around for when it is available once again.
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tasks_functions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Tasks/Functions</h2>
+                    <p class="lead">From the Playable Items list there are a number of tasks/functions you do</p>
+                    <ul>
+                        <li class="fw-bold">Play</li>
+                        Play will create a Launch Task and attempt to play your Playable Item on the device that you choose.
+                        <li id="share" class="fw-bold">Share</li>
+                        This function copies a URL to your device's clipboard.  From here you can paste the URL wherever you want(Text or other application).  <br />
+                        <br />
+                        There are two types of URLs:
+                        <ul>
+                            <li>rokucc.com link</li>
+                            This type of URL is specifically generated for use with the RCC app.  It will contain all information within the Playable Item for another RCC user to use.
+                            <li>{content provider} link</li>
+                            This type of URL is generated for web browsers or the RCC app.  When you set the Content Id of your Playable Item, if you pasted a content provider's URL (from roku.com, netflix.com, tubitv.com, etc...) in the entry that URL will be copied to your clipboard.  If not then RCC will try to build the appropriate URL.  ***Not all Roku Channels are supported and it is recommended to use a rokucc.com link instead.
+                        </ul>
+                        <li class="fw-bold">Task-Keep Within</li>
+                        Keep Within will launch the Playable Item and until the task is stopped keep your device within the channel.   If the user exists the channel, RCC will relaunch the channel and content if provided.
+                        <li class="fw-bold">Task-Sleep</li>
+                        Sleep will launch the Playable Item and based on your settings, gradually turn the volume down until finally running any commands you provide afterwards.  This works great for people who have a Roku Soundbar connected to a tradional computer monitor where there is no Sleep function like a TV.
+                        <li class="fw-bold">Task-Wake</li>
+                        Wake will launch the Playable Item at a certain time and based on your settings, gradually turn the volume up until completion.  This works great for people who have a Roku Soundbar connected to a tradional computer monitor where there is no Wake function like a TV.
+                        <li class="fw-bold">Task-Party Time</li>
+                        Party Time allows you to launch content to multiple devices (within the private network) and control Playing and Pausing all devices.  In this task you identify a Host and Party Go-ers. The person in control of the host device will be able to control all party goers with their traditional Roku remote.
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="known issues" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Known Issues</h2>
+                    <ul>
+                        <li class="fw-bold">None reported thusfar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p class="lead">Please feel free to contact us regarding Playable Items on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Playable%20Items">here</a>!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Current Version: 0.0.0.0</p>
+            <p class="m-0 text-center text-white">Copyright &copy; DP Technology LLC 2021</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/scrolling-nav.js"></script>
+</body>
+</html>
+

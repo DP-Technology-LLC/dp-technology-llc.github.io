@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="DP Technology LLC">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="Content/scrolling-nav.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">DP Technology LLC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#videos">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#known issues">Known Issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white">
+        <div class="container text-center">
+            <h1>Command List Builder</h1>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About Command List Builder</h2>
+                    <p class="lead">The Command List Builder is a way to build valid Roku and RCC commands. Most of the Roku Commands you see on a Roku remote are here with some additioal RCC Commands that add some more functionality. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faqs" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>FAQs</h2>
+                    <p class="lead"></p>
+                    <ul>
+                        <li class="fw-bold">If I select a Device(optional) what happens?</li>
+                        While you are building your list of commands, you can have the Command List Builder send the command to a Roku Device as you build the list.  You may very briefly see "WAITINGforRESPONSE" prior to your tapped command in the command list, this means it is waiting to hear back from your Roku Device if it got the command.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">The Launch button appears disabled, what is it and how do I enable it?</li>
+                        This button is only enabled if you came to this view with a Playable Item identified and have a Roku Device selected (left of the button).  Tapping this button will launch the Playable Item on the selected Roku Device.  This can be useful if you want to send commands after launching a channel and you need to see how long the channel takes to be fully loaded.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">What is "Wait Start" and "Wait Stop" and why would I use them?</li>
+                        These two buttons create RCC's Wait Command.  It allows you to delay sending the next command in the list for a certain amount of seconds.  It is very useful if you need to send a list of commands to a channel, but not until after the channel is completely loaded.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">What is "Wait N/S" and why would I use them?</li>
+                        This button creates RCC's "Wait Not Streaming" Command.  When RCC comes to this command, RCC will get the status of your Roku Device and if it appears to be streaming RCC will continue to wait until it is not streaming anymore.  This would be useful with the Repeat Command to play one item after another, please refer to this
+                        <a href="#demo_wns_repeat">demo</a>.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">What is "Repeat Start" and "Repeat Stop" and why would I use them?</li>
+                        These two buttons create RCC's Repeat Command.  It allows you to identify a list of commands to loop through.  This would be useful with the Wait Not Streaming Command to play one item after another, please refer to this
+                        <a href="#demo_wns_repeat">demo</a>.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">What is the literal button?</li>
+                        This button opens up your keyboard and allows you to type in whatever values you want.  The Command List Builder will build a command for each character and add them to the list.
+                    </ul>
+                    <ul>
+                        <li class="fw-bold">I made a mistake, how do I fix it</li>
+                        From this view, you can't.  You can fix it in the entry field next to the button that brought you here.
+                    </ul>
+                    <ul>
+                        <li>More Coming Soon</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="videos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Demo Videos</h2>
+                    <p class="lead">Below are videos on how to use the Command List Builder</p>
+                    <ul>
+                        <li id="demo_wns_repeat" class="fw-bold">Using the "Wait Not Streaming" and Repeat commands</li>
+                        In this demo we will show you how you can watch the latest clips in the NBA channel one after another, even though the NBA channel does not have the ability to do so. Warning if you provide a Repeat command the RCC task will not stop, you need to stop it manually.
+                        <br />
+                        <br />
+                        Video coming soon but basically here is how you do it.
+                        <br />
+                        Create a Playable Item, choose NBA(you need to have a Roku Device with this channel installed) as the channel and set the Post Launch Command List with the following values:
+                        <b>Wait_10,Down,Repeat[Select+Wait_5+Wait_NotStreaming+Right]</b>.  What these commands mean is after the Launch of the NBA channel, RCC will wait 10 seconds because that is about how long we observed the app to take to be fully load, go Down, then Repeat the commands Select, Wait_5, Wait_NotStreaming, Right.  Select should start the clip, Wait_5 gives the clip time to load, Wait_NotStreaming lets RCC know to wait until the Roku Device is not steaming, once not streaming send right command and then repeat the process.
+                    </ul>
+                    <ul>
+                        <li id="demo_search" class="fw-bold">Using the Command List Builder to build a list of commands to search and launch</li>
+                        In this demo we will show you how you can watch content even if you don't have the Content Id.
+                        <br />
+                        <br />
+                        Video coming soon but basically here is how you do it.
+                        <br />
+                        Create a Command List Task. Using the <b>Home</b> command to bring you back to the home screen, you can use the <b>Down</b> command(s) until you get to search.  Use the <b>Select</b> command to go into the search and then use the <b>Literal</b> command to provide your search string.  Then use the <b>Right</b> and other commands to select your desired result.  From there depending on the content and channel, provide any further commands needed to get your content streaming.
+                    </ul>
+                    <ul>
+                        <li>More Coming Soon</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="known issues" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Known Issues</h2>
+                    <ul>
+                        <li class="fw-bold">None reported thusfar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p class="lead">Please feel free to contact us regarding the Command List Builder feature on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Command%20List%20Builder">here</a>!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Current Version: 0.0.0.0</p>
+            <p class="m-0 text-center text-white">Copyright &copy; DP Technology LLC 2021</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/scrolling-nav.js"></script>
+</body>
+</html>
+
