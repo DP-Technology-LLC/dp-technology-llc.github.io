@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About Devices</h2>
-                    <p class="lead">Devices are a list of Roku Devices that you create for RCC to interface with.  RCC needs an IP Address so it knows who to talk to.  When you save RCC will fetch the device's information and installed channels.  This data will be stored within RCC.'</p>
+                    <p class="lead">Devices are a list of Roku Devices that you create for RCC to interface with.  RCC needs an IP Address so it knows who to talk to.  When you save RCC will fetch the device's information and installed channels.  This data will be stored within RCC.</p>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>Properites of a Playable Item</h2>
+                    <h2>Properites of a Device</h2>
                     <p class="lead"></p>
                     <ul>
                         <li class="fw-bold">Name</li>
@@ -81,28 +81,72 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Tasks/Functions</h2>
-                    <p class="lead">From the Playable Items list there are a number of tasks/functions you do</p>
+                    <p class="lead">From the Devices list there are a number of tasks/functions you do.  Tasks and Menus can be hidden or made visible from the Settings view</p>
                     <ul>
-                        <li class="fw-bold">Play</li>
-                        Play will create a Launch Task and attempt to play your Playable Item on the device that you choose.
-                        <li id="share" class="fw-bold">Share</li>
-                        This function copies a URL to your device's clipboard.  From here you can paste the URL wherever you want(Text or other application).  <br />
-                        <br />
-                        There are two types of URLs:
+                        <li class="fw-bold">Info</li>
+                        The Info view will show you three sets of data for your Device.
                         <ul>
-                            <li>rokucc.com link</li>
-                            This type of URL is specifically generated for use with the RCC app.  It will contain all information within the Playable Item for another RCC user to use.
-                            <li>{content provider} link</li>
-                            This type of URL is generated for web browsers or the RCC app.  When you set the Content Id of your Playable Item, if you pasted a content provider's URL (from roku.com, netflix.com, tubitv.com, etc...) in the entry that URL will be copied to your clipboard.  If not then RCC will try to build the appropriate URL.  ***Not all Roku Channels are supported and it is recommended to use a rokucc.com link instead.
+                            <li>Current State</li>
+                            Current State fetches the status of the Roku Device at the current moment.  You can tap on the header label to request an update.
+                            <li>Device Info</li>
+                            Device Info was fetched the last time you saved your Device.  It contains stuff like Model Name, Model Numbe, etc...
+                            <li>Installed Channels</li>
+                            Installed Channels was fetched the last time you saved your Device.  If you installed a channel after creating your Device in RCC, it will not be here until you Edit and Save your Device.
                         </ul>
+                        <br />
+                        <li id="share" class="fw-bold">Number Pad</li>
+                        This function allows you to send number commands to your Device.  Use this if you watch a lot of live content where the channels are numbered.
+                        <br />
+                        <br />
                         <li class="fw-bold">Task-Keep Within</li>
-                        Keep Within will launch the Playable Item and until the task is stopped keep your device within the channel.   If the user exists the channel, RCC will relaunch the channel and content if provided.
+                        Keep Within will fetch the current Roku Channel from your Device and until the task is stopped RCC keep your device within the channel.   If the user exists the channel, RCC will relaunch the channel.  This works great for parents who want their kids to stay within a Kid Friendly Roku Channel.
+                        <br />
+                        <br />
                         <li class="fw-bold">Task-Sleep</li>
-                        Sleep will launch the Playable Item and based on your settings, gradually turn the volume down until finally running any commands you provide afterwards.  This works great for people who have a Roku Soundbar connected to a tradional computer monitor where there is no Sleep function like a TV.
+                        Sleep will gradually turn the volume down, based on your settings, until finally running any commands you provide afterwards.  This works great for people who have a Roku Soundbar connected to a tradional computer monitor where there is no Sleep function like a TV.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Status Change</li>
+                        This task allows users to get a notification if the status of a Device changes.  This is great for people who want to know if a device stops streaming or exits a channel without have to be physically present.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Channel Tracker</li>
+                        This task will track what channels are used for a selected Device.  This is great for people who downloaded too many channels and need some data determining which ones to get rid of.  ***Warning: To capture a large data set this task needs to run for a long time.  So if you have an older device not in use, it would be perfect for a task like this.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Volume Control</li>
+                        This task will attempt to adjust the volume during commercial breaks.  This task requires your Roku Device to have control of the volume and is highly dependent on the developers of the channel RCC is monitoring.  If they embed the commercial within the streaming content then this task will not be able to tell what is a commerical and what is not.  On Demand content within The Roku Channel or Music Videos on Vevo work very well.
+                        <br />
+                        <br />
                         <li class="fw-bold">Task-Wake</li>
-                        Wake will launch the Playable Item at a certain time and based on your settings, gradually turn the volume up until completion.  This works great for people who have a Roku Soundbar connected to a tradional computer monitor where there is no Wake function like a TV.
-                        <li class="fw-bold">Task-Party Time</li>
-                        Party Time allows you to launch content to multiple devices (within the private network) and control Playing and Pausing all devices.  In this task you identify a Host and Party Go-ers. The person in control of the host device will be able to control all party goers with their traditional Roku remote.
+                        Wake will launch a Playable Item at a certain time and based on your settings, gradually turning the volume up until completion.  This works great for people who have a Roku Soundbar connected to a tradional computer monitor where there is no Wake function like a TV.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Push PIN</li>
+                        This task will not be an option if you do not
+                        <a href="#pin">provide a PIN for your device</a>.  This task will send your PIN to the Device.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Restart OS</li>
+                        This task will attempt to navigate to the Roku Setting where you would reset your Roku Device.  This task runs the Command List RCC task with a pre-set list of commands.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Command List</li>
+                        This task will allow you to build a list of Roku Commands and RCC Commands to send to your Device.  While configuring this task you can make use of the
+                        <a href="rcc_commandlistbuilder">Command List Builder</a> to ensure you create valid commands.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Mobile Control</li>
+                        This task will attempt to navigate to the Roku Setting where you can turn change the
+                        <a href="https://support.roku.com/article/115001480188">Control by Mobile Apps</a> setting.  This task runs the Command List RCC task with a pre-set list of commands.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Task-Commercial Counter</li>
+                        This task will attempt to count the number of commercials that have been served to you.  Similar to the Volume Control task this task is highly dependent on the developers of the channel RCC is monitoring.  If they embed the commercial within the streaming content then this task will not be able to tell what is a commerical and what is not.  On Demand content within The Roku Channel or Music Videos on Vevo work very well.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Secret Screens</li>
+                        There are a number of Secret Screens you can access with your Roku remote.  Currently RCC has two that work through the app and others that don't.  The ones that don't use the correct remote commands but the secret screen won't show.  You can see the commands by running one of them and then looking at the Message Log of the completed RCC task.
                     </ul>
                 </div>
             </div>
@@ -125,7 +169,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Contact us</h2>
-                    <p class="lead">Please feel free to contact us regarding the Link Launcher feature on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Link%20Launcher">here</a>!</p>
+                    <p class="lead">Please feel free to contact us regarding the Devices on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Devices">here</a>!</p>
                 </div>
             </div>
         </div>
