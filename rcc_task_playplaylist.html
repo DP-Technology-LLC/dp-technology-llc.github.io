@@ -48,15 +48,15 @@
     </nav>
     <header class="bg-primary text-white">
         <div class="container text-center">
-            <h1>Command List Task</h1>
+            <h1>Play Playlist Task</h1>
         </div>
     </header>
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>About Command List Task</h2>
-                    <p class="lead">The Command List Task is a way to send a list of commands to your Roku Device. In addition to sending valid Roku Commands, you can also provide RCC commands such as Repeat and Wait.</p>
+                    <h2>About Play Playlist Task</h2>
+                    <p class="lead">The Play Playlist Task plays Playable Items that you have added to a Playlist.  Once the task is started RCC will monitor your device and when it is not streaming, RCC will launch the next Playable Item.  If you configure the task to <a href="#movetonext">Move to Next after content changes</a>, RCC will try determine when you are done watching your current content and move to the next.</p>
                 </div>
             </div>
         </div>
@@ -68,11 +68,13 @@
                     <h2>Task Settings</h2>
                     <p class="lead"></p>
                     <ul>
-                        <li class="fw-bold">Command List</li>
-                        A free-text entry for the commands you want to run.  You can also use the <a href="rcc_commandlsitbuilder.html">Command List Builder</a> to ensure you create valid commands by tapping on the button next to the entry.
+                        <li class="fw-bold">Repeat</li>
+                        A Checkbox setting indicating if RCC should play the first item when the last one is finished.  If unchecked the task will end when the last item finishes.<br />
                         <br />
+                        <li class="fw-bold">Move to Next after content changes</li>
+                        A Checkbox setting indicating if RCC will take additional measures to determine if your Playable Item is finished.  If unchecked RCC will only move to next item when your Device is done streaming.  So if your Playable Item is a series in a channel that auto-plays the next episode, the channel will continue to the next episode and RCC will not attempt to play the next Playable Item.<br />
                         <br />
-                        <li class="fw-bold">Name, Push Notification upon completion and Start Time</li>
+                        <li class="fw-bold">Start Time</li>
                         See common RCC task properites here.
                     </ul>
                 </div>
@@ -86,13 +88,12 @@
                     <h2>FAQs</h2>
                     <p class="lead"></p>
                     <ul>
-                        <li class="fw-bold">What is a valid Roku Command?</li>
-                        Every view within RCC that accepts a list of commands, there should be a BUILD button next to the entry.  This button will show a Command List Builder.  Within Command List Builder you can tap on the familiar buttons you may have seen on a Roku remote, or buttons that create RCC commands.
-                    </ul>
-                    <ul>
-                        <li class="fw-bold">How do I use the Command List Builder and what are RCC commands?</li>
-                        You can view information regarding the Command List Builder and the RCC commands
-                        <a href="rcc_commandlistbuilder.html">here</a>.
+                        <li class="fw-bold">Do I have to start with the first Playable Item in my Playlist?</li>
+                        No.  When you tap Play on your Playlist, you can select which Playable Item to start with in the details view.<br />
+                        <br />
+                        <li class="fw-bold">Now that I started the Playlist can I start watching a different Playable Item in the list?</li>
+                        Yes!  Under Running Tasks, tap on your Play Playlist Task and then tap View Details.  In the details, select the desired Playable Item and tap Play.<br />
+                        <br />
                     </ul>
                 </div>
             </div>
@@ -103,7 +104,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Demo Videos</h2>
-                    <p class="lead">Below are videos on how to use the Command List Task</p>
+                    <p class="lead">Below are videos on how to use the Play Playlist Task</p>
                     <ul>
                         <li class="fw-bold">Coming Soon</li>
                     </ul>
@@ -128,7 +129,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Contact us</h2>
-                    <p class="lead">Please feel free to contact us regarding the Command List Task on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Command%20List%20Task">here</a>!</p>
+                    <p class="lead">Please feel free to contact us regarding the Play Playlist Task on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Play%20Playlist%20Task">here</a>!</p>
                 </div>
             </div>
         </div>

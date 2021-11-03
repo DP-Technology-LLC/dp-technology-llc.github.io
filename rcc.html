@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About Roku Control Center from DP Technology LLC (RCC)</h2>
-                    <p class="lead">Roku Control Center from DP Technology LLC (RCC) was created to improve a user's experience with their Roku devices. As long as your Device is connected to the same private network as a Roku Device, RCC can communicate with it!  RCC was created as a passion project and was not developed by Roku, Inc nor anybody associated with Roku, Inc nor any of the Channel Owners within the lineup within the Roku-verse.  You can even use RCC on older devices, if you can't find RCC in your respective store check here(coming soon)! Check in later as we plan on providing more information on RCC including guides, tips and tricks!  Thank you for stopping by we hope you enjoy RCC!</p>
+                    <p class="lead">Roku Control Center from DP Technology LLC (RCC) was created to improve a user's experience with their Roku devices. As long as your Android (iOS and UWP soon) device is connected to the same private network as a Roku device, RCC can communicate with it!  RCC was created as a passion project and was not developed by Roku, Inc nor anybody associated with Roku, Inc nor any of the Channel Owners within the lineup in the Roku-verse.  You can even use RCC on older devices, if you can't find RCC in your respective store check here(coming soon)! Check in later as we plan on providing more information on RCC including guides, tips and tricks!  Thank you for stopping by we hope you enjoy RCC!</p>
                 </div>
             </div>
         </div>
@@ -90,6 +90,13 @@
                     <h2>Tasks and Functionality within RCC</h2>
                     <p class="lead">Since we are not associated with Roku nor any of the tens of thousands of Roku Channels, functionality is dependent on how the Channel developers created their Channels.  Currently The Roku Channel supports most if not all of the functionality within RCC. There may be channels out there that work well that we just haven't tested, so if you come across one let us know!</p>
                     <ul>
+                        <li><a href="rcc_quicklaunchwidget.html">Quick Launch Widget</a></li>
+                        If you create a
+                        <a href="rcc_playableitems.html">Playable Item</a> that you constantly watch on the same Roku
+                        <a href="rcc_devices.html">Device</a>, you can put a widget on your home screen.  Just tap the widget and RCC will attempt to launch the Playable Item on the Roku Device.  See the two settings regarding the Quick Launch Widget
+                        <a href="#quicklaunchwidget">here</a>.
+                        <br />
+                        <br />
                         <li><a href="rcc_numberpad.html">Number Pad</a></li>
                         The Number Pad is a nice and quick way to send number commands to your Roku
                         <a href="rcc_devices.html">Device</a>.  If you watch a lot of Live content within a channel, this functionality allows you to quickly jump from one numbered channel to another without having to scroll your way to it.
@@ -107,23 +114,23 @@
                         The Play/Launch task takes a saved Playable Item and plays it on your Roku Devices.  A Playable Item can be as simple as launching a channel, launching a channel followed by a list of commands, or if you have access to the Content Id you can launch your content directly.
                         <br />
                         <br />
-                        <li>Play Playlist task</li>
+                        <li><a href="rcc_task_playplaylist.html">Play Playlist Task</a></li>
                         The Play Playlist task takes a Playlist of your created Playable Items and will play them in the order you added the Playable Items.  Once your Roku Device stops streaming content this task will attempt to launch the next Playble Item, even if the Items are from different Roku Channels.
                         <br />
                         <br />
-                        <li>Sleep task</li>
+                        <li><a href="rcc_task_sleep.html">Sleep task</a></li>
                         The Sleep task (similar to the Wake task) will turn down the volume for a determined number of times and length.  Once complete the task will send a final list of commands such as PowerOff or Home.  This task is great for those who have a Roku Soundbar connected to a traditional computer monitor.
                         <br />
                         <br />
-                        <li>Wake task</li>
+                        <li><a href="rcc_task_wake.html">Wake task</a></li>
                         The Wake task (similar to the Sleep task) will launch a Playable Item at a determined time and turn up the volume for a determined number of times and length.  This task is great for those who have a Roku Soundbar connected to a traditional computer monitor.
                         <br />
                         <br />
-                        <li>Volume Control task</li>
-                        The Volume Control task (similar to the Commercial Counter task) will attempt to adjust the volume during commerical breaks.  You can set the parameters to help RCC determine if the content is in a commercial break.  This task is depenent on Channel Developers and how they display commercials. This task may not work for live content as well.
+                        <li><a href="rcc_task_volumecontrol.html">Volume Control task</a></li>
+                        The Volume Control task (similar to the Commercial Counter task) will attempt to adjust the volume during commerical breaks.  You can set the parameters to help RCC determine if the content is in a commercial break.  This task is dependent on Channel Developers and how they display commercials. This task may not work for live content as well.
                         <br />
                         <br />
-                        <li>Commerical Counter task</li>
+                        <li><a href="rcc_task_commericalcounter.html">Commerical Counter task</a></li>
                         The Commerical Counter task (similar to the Volume Control task) will attempt to count the number of commericals you see during the breaks.  This task is depenent on Channel Developers and how they display commercials. This task may not work for live content as well.
                         <br />
                         <br />
@@ -144,7 +151,7 @@
                         <br />
                         <br />
                         <li>Account Login task</li>
-                        The Account Login task is task you can store your user name and password so you don't have to navigate to every character.  The Password field is a Password-Typed entry so nobody can see while they are in RCC.
+                        The Account Login task is task you can store your user name and password so you don't have to navigate to every character.  The Password field is a Password-Typed entry so nobody can see it while they are in RCC.
                         <br />
                         <br />
                         <li>Save one of the above tasks to run in the future</li>
@@ -166,18 +173,22 @@
                         <br />
                         <br />
                         <li>Restart OS</li>
-                        A Task that nearly every computer user has done, RCC will attempt to navigate through the settings and perform this task.
+                        A Task that nearly every computer user has done, RCC will run a pre-set
+                        <a href="rcc_commandlist.html">Command List Task</a> that attempts to navigate through the settings and perform this task.
                         <br />
                         <br />
                         <li>Navigate to Roku Setting that determines Mobile Control</li>
-                        If you scared a person with the ability to control their Roku Device with your device, RCC will attempt to navigate through the settings to the area where you can block mobile control.
+                        If you are concerned with a person having the ability to control Roku Device with a mobile device, RCC will run a pre-set
+                        <a href="rcc_commandlist.html">Command List Task</a> that attempts to navigate to the
+                        <a href="https://support.roku.com/article/115001480188">Control by Mobile Apps</a> setting where you can block mobile control.
                         <br />
                         <br />
                         <li>Push PIN</li>
-                        If you saved your Roku Account PIN in the Password-Typed entry for a Roku <a href="rcc_devices.html#pin">Device</a>.  You can then send the PIN on demand.
+                        If you saved your Roku Account PIN in the Password-Typed entry for a Roku
+                        <a href="rcc_devices.html#pin">Device</a>.  You can then send the PIN on demand.
                         <br />
                         <br />
-                        <li>Display the many hidden menus</li>
+                        <li><a href="rcc_devices.html#menufaq">Display the many hidden menus</a></li>
                         There are many hidden menus.  By default RCC shows you two because the others don't work for some reason.  You can run the other one's but you will need to look at the Task's messages and follow the commands with your Roku remote.
                         <br />
                         <br />
@@ -185,13 +196,6 @@
                         This app can send a list of commands to a Roku
                         <a href="rcc_devices.html">Device</a> based on a Key Press of your device.  This works great for people who have a "ThumbsUp" or similar button.  These users can assign to launch RCC on press and when you are in RCC another press will send a list of commands. See the three settings regarding the Programmable Button
                         <a href="#programmablebutton">here</a>.
-                        <br />
-                        <br />
-                        <li><a href="rcc_quicklaunchwidget.html">Quick Launch Widget</a></li>
-                        If you create a
-                        <a href="rcc_playableitems.html">Playable Item</a> that you constantly watch on the same Roku
-                        <a href="rcc_devices.html">Device</a>, you can put a widget on your home screen.  Just tap the widget and RCC will attempt to launch the Playable Item on the Roku Device.  See the two settings regarding the Quick Launch Widget 
-                        <a href="#quicklaunchwidget">here</a>.
                         <br />
                         <br />
                     </ul>
@@ -298,11 +302,11 @@
                         This setting may go away but the intent is to limit the number of fetches during the executing of some tasks.  For example the typical streaming commerical is no less than 15 seconds, so for the Commerical Counter task RCC will only fetch a Roku Device's status every 15 seconds.
                         <br />
                         <br />
-                        <li id="quicklaunchwidget" class="fw-bold">Quick Launch Widget - Playable Item</li>
+                        <li id="quicklaunchwidget" class="fw-bold"><a href="rcc_quicklaunchwidget.html">Quick Launch Widget - Playable Item</a></li>
                         If you create a Quick Launch Widget on one of your home screens, this is the Playable Item that will be launched.
                         <br />
                         <br />
-                        <li class="fw-bold">Quick Launch Widget - Device</li>
+                        <li class="fw-bold"><a href="rcc_quicklaunchwidget.html">Quick Launch Widget - Device</a></li>
                         If you create a Quick Launch Widget on one of your home screens, this is the Device your Playable Item that will be launched on.
                         <br />
                         <br />
