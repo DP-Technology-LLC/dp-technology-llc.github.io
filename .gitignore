@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/mobile-privacy-policy-ad-sponsored-apps.html
+/DPTechnologyLLCSite.csproj.user
+/DPTechnologyLLCSite.csproj
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/HTML5/v16/.suo
+/.vs/HTML5/config/applicationhost.config
+/.vs/DPTechnologyLLCSite/v16/.suo

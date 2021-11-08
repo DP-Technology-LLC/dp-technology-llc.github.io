@@ -8,11 +8,11 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="../../Content/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="Content/scrolling-nav.css" rel="stylesheet">
-    <link href="Content/Site.css" rel="stylesheet" />
-    <title></title>
+    <link href="../../Content/scrolling-nav.css" rel="stylesheet">
+    <link href="../../Content/Site.css" rel="stylesheet" />
+    <title>Commercial Counter Task</title>
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -26,6 +26,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#settings">Task Settings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
@@ -45,15 +48,37 @@
     </nav>
     <header class="bg-primary text-white">
         <div class="container text-center">
-            <h1>Number Pad</h1>
+            <h1>Volume Control Task</h1>
         </div>
     </header>
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>About Number Pad</h2>
-                    <p class="lead">The Number Pad is a nice and quick way to send number commands to your Roku Device. If you watch a lot of Live content within a channel, this functionality allows you to quickly jump from one numbered channel to another without having to scroll your way to it.</p>
+                    <h2>About Commerical Counter Task</h2>
+                    <p class="lead">The Commerical Counter Task is a way for people who are curious about how many commericals they have been served. ***This task is highly dependent on the developers of the channel RCC is monitoring.  If they embed the commercial within the streaming content then this task will not be able to tell what is a commerical and what is not.  On Demand content within The Roku Channel or Music Videos on Vevo work very well.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="settings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Task Settings</h2>
+                    <p class="lead"></p>
+                    <ul>
+                        <li class="fw-bold">Commerical Break Length in seconds</li>
+                        A free-text entry to help determine what should be considered a commerical break.  
+                        <br />
+                        <br />
+                        <li class="fw-bold">Command</li>
+                        A picker for the command.  Do you want the volume up or down during a commerical break?
+                        <br />
+                        <br />
+                        <li class="fw-bold">Name, Push Notification upon completion and Start Time</li>
+                        See common RCC task properites here.
+                    </ul>
                 </div>
             </div>
         </div>
@@ -65,7 +90,10 @@
                     <h2>FAQs</h2>
                     <p class="lead"></p>
                     <ul>
-                        <li class="fw-bold">Coming Soon</li>
+                        <li class="fw-bold">The task did not count the commericals during my commerical break, why?</li>
+                        RCC doesn't know specific information on what you are streaming.  This task will make assumptions based on the length of the content you are watching.  If the channel developer put the commericals as part of your main content, RCC will not know if it is a commerical or not.  If you watch on-demand stuff on The Roku Channel, when you are in a commerical break look at your Device's Info, there you can see the content length is much shorter than your main content.
+                        <br />
+                        <br />
                     </ul>
                 </div>
             </div>
@@ -76,7 +104,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Demo Videos</h2>
-                    <p class="lead">Below are videos on how to use the Number Pad</p>
+                    <p class="lead">Below are videos on how to use the Commerical Counter Task</p>
                     <ul>
                         <li class="fw-bold">Coming Soon</li>
                     </ul>
@@ -101,7 +129,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Contact us</h2>
-                    <p class="lead">Please feel free to contact us regarding the Number Pad feature on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Number%20Pad">here</a>!</p>
+                    <p class="lead">Please feel free to contact us regarding the Commerical Counter Task on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Commercial%20Counter%20Task">here</a>!</p>
                 </div>
             </div>
         </div>
@@ -115,10 +143,10 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="Scripts/jquery-3.3.1.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
 
-    <script src="Scripts/scrolling-nav.js"></script>
+    <script src="../../Scripts/scrolling-nav.js"></script>
 </body>
 </html>
 

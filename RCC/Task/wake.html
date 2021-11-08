@@ -8,11 +8,11 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="../../Content/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="Content/scrolling-nav.css" rel="stylesheet">
-    <link href="Content/Site.css" rel="stylesheet" />
-    <title></title>
+    <link href="../../Content/scrolling-nav.css" rel="stylesheet">
+    <link href="../../Content/Site.css" rel="stylesheet" />
+    <title>Wake</title>
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -26,6 +26,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#settings">Task Settings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
@@ -45,15 +48,41 @@
     </nav>
     <header class="bg-primary text-white">
         <div class="container text-center">
-            <h1>Launch Task</h1>
+            <h1>Wake Task</h1>
         </div>
     </header>
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>About Launch Task</h2>
-                    <p class="lead">The Lauch Task sends your Playable Item to the Roku Device that you select.</p>
+                    <h2>About Wake Task</h2>
+                    <p class="lead">The Wake Task is a way to mimic what you may see on a standard television with some additional niceties.  You can use it to simply Play a Playable Item a certain time or you can have it turn the volume up as time goes by afterwards.  This task is great for people who have a Roku Streambar connected to a computer monitor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="settings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Task Settings</h2>
+                    <p class="lead"></p>
+                    <ul>
+                        <li class="fw-bold">Notches</li>
+                        A free-text entry for how many times you want RCC to turn the volume up.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Minutes Per Cycle</li>
+                        A free-text entry for how long to wait to turn the volume up.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Cycles</li>
+                        A free-text entry for how many times to turn the volume up.
+                        <br />
+                        <br />
+                        <li class="fw-bold">Name, Push Notification upon completion and Start Time</li>
+                        See common RCC task properites here.
+                    </ul>
                 </div>
             </div>
         </div>
@@ -65,7 +94,8 @@
                     <h2>FAQs</h2>
                     <p class="lead"></p>
                     <ul>
-                        <li class="fw-bold">Coming Soon</li>
+                        <li class="fw-bold">Notches, Minutes per Cycle and Cycles; huh?</li>
+                        Say you want to start playing your Playable Item at 6:30am and then every minute until 6:45am you want the volume to increase by one.  You would have Notches = 1, Minutes per Cycle = 1, Cycles = 15 and Start Time = 6:30am.
                     </ul>
                 </div>
             </div>
@@ -76,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Demo Videos</h2>
-                    <p class="lead">Below are videos on how to use the Launch Task</p>
+                    <p class="lead">Below are videos on how to use the Wake Task</p>
                     <ul>
                         <li class="fw-bold">Coming Soon</li>
                     </ul>
@@ -101,7 +131,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Contact us</h2>
-                    <p class="lead">Please feel free to contact us regarding the Launch Task on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Launch%20Task">here</a>!</p>
+                    <p class="lead">Please feel free to contact us regarding the Wake Task on RCC <a href="mailto:dp.technology@outlook.com?subject=RCC%20Inquery%20Wake%20Task">here</a>!</p>
                 </div>
             </div>
         </div>
@@ -115,10 +145,10 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="Scripts/jquery-3.3.1.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.js"></script>
+    <script src="../../Scripts/bootstrap.js"></script>
 
-    <script src="Scripts/scrolling-nav.js"></script>
+    <script src="../../Scripts/scrolling-nav.js"></script>
 </body>
 </html>
 
