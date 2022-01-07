@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>About Roku Control Center from DP Technology LLC (RCC)</h2>
-                    <p class="lead">Roku Control Center from DP Technology LLC (RCC) was created to improve a user's experience with their Roku devices. As long as your Android (iOS and UWP soon) device is connected to the same private network as a Roku device, RCC can communicate with it!  RCC was created as a passion project and was not developed by Roku, Inc nor anybody associated with Roku, Inc nor any of the Channel Owners within the lineup in the Roku-verse.  You can even use RCC on older devices, if you can't find RCC in your respective store check here(coming soon)! Check in later as we plan on providing more information on RCC including guides, tips and tricks!  Thank you for stopping by we hope you enjoy RCC!</p>
+                    <p class="lead">Roku Control Center from DP Technology LLC (RCC) was created to improve a user's experience with their Roku devices. As long as your Android (iOS and UWP soon) device is connected to the same private network as a Roku device, RCC can communicate with it!  RCC was created as a passion project and was not developed by Roku, Inc nor anybody associated with Roku, Inc nor any of the Channel Owners within the lineup in the Roku-verse.  You can even use RCC on older devices, if you can't find RCC in your respective store check <a href="#" onclick="alert('Coming Soon!');">here</a>! Check in later as we plan on providing more information on RCC including guides, tips and tricks!  Thank you for stopping by we hope you enjoy RCC!</p>
                 </div>
             </div>
         </div>
@@ -72,10 +72,10 @@
                     <a href="https://play.google.com/store/apps/details?id=com.dptechnologyllc.RCC.Android">
                         <img src="../Content/googleplay-button1.png" />
                     </a>
-                    Available Now!
+                    Available Now! (All features listed available)
                     <br />
                     <img src="../Content/download-on-the-app-store-logo-png-23.png" />
-                    Coming soon
+                    Coming soon (Features wtih ** are not available at this time)
                     <br />
                     <img src="../Content/download-from-windows-store-icon-logo.png" />
                     Coming soon???
@@ -90,7 +90,7 @@
                     <h2>Tasks and Functionality within RCC</h2>
                     <p class="lead">Since we are not associated with Roku nor any of the tens of thousands of Roku Channels, functionality is dependent on how the Channel developers created their Channels.  Currently The Roku Channel supports most if not all of the functionality within RCC. There may be channels out there that work well that we just haven't tested, so if you come across one let us know!</p>
                     <ul>
-                        <li><a href="Widgets/quicklaunchwidget.html">Quick Launch Widget</a></li>
+                        <li><a href="Widgets/quicklaunchwidget.html">Quick Launch Widget</a> **</li>
                         If you create a
                         <a href="MainView/playableitems.html">Playable Item</a> that you constantly watch on the same Roku
                         <a href="MainView/devices.html">Device</a>, you can put a widget on your home screen.  Just tap the widget and RCC will attempt to launch the Playable Item on the Roku Device.  See the two settings regarding the Quick Launch Widget
@@ -102,7 +102,7 @@
                         <a href="MainView/devices.html">Device</a>.  If you watch a lot of Live content within a channel, this functionality allows you to quickly jump from one numbered channel to another without having to scroll your way to it.
                         <br />
                         <br />
-                        <li><a href="LinkLauncher">Link Launcher</a></li>
+                        <li><a href="LinkLauncher">Link Launcher</a> **</li>
                         Link Launcher allows you to launch content to your Roku Devices from a simple URL.  If you can even save the Playable Item or Launch Task to be run at a different time.  URLs can be a rokucc.com URL or one of the supported channels.
                         <br />
                         <br />
@@ -158,7 +158,7 @@
                         If you have a task that you run a regular basis, you can save it and run it on demand in the future.
                         <br />
                         <br />
-                        <li><a href="MainView/playableitems.html#share">Share a Playable Item with others</a></li>
+                        <li><a href="MainView/playableitems.html#share">Share a Playable Item with others</a> **(Apple users can send but not receive)</li>
                         Once you create a
                         <a href="MainView/playableitems.html">Playable Item</a> you can share it with other people.  You can share a
                         <a href="LinkLauncher/#rokucc.com_link">rokucc.com link</a> which will have all the information needed for another RCC user to seamlessly save or launch.  If you populated the Content Id with a URL from the Channel's website you can share that instead, the people you send it to may need to provide more info before they can play the content.
@@ -192,7 +192,7 @@
                         There are many hidden menus.  By default RCC shows you two because the others don't work for some reason.  You can run the other one's but you will need to look at the Task's messages and follow the commands with your Roku remote.
                         <br />
                         <br />
-                        <li>Assign Roku Commands to Device Key Presses</li>
+                        <li>Assign Roku Commands to Device Key Presses **</li>
                         This app can send a list of commands to a Roku
                         <a href="MainView/devices.html">Device</a> based on a Key Press of your device.  This works great for people who have a "ThumbsUp" or similar button.  These users can assign to launch RCC on press and when you are in RCC another press will send a list of commands. See the three settings regarding the Programmable Button
                         <a href="#programmablebutton">here</a>.
@@ -234,19 +234,15 @@
                         When going to content directly, RCC will continuously fetch your Roku's device's status to see if it successfully loaded.  This value will determine how long until RCC gives up if it cannot verify if your content is streaming.
                         <br />
                         <br />
-                        <li class="fw-bold">Automatically attempt to push Account PIN when installing a channel</li>
-                        If you have a PIN assigned to Install channels and provided the PIN when creating the device within RCC, this setting will attempt to send your PIN after attempting to install a channel.
-                        <br />
-                        <br />
-                        <li id="programmablebutton" class="fw-bold">Programmable Button - Assign a list of commands?</li>
+                        <li id="programmablebutton" class="fw-bold">Programmable Button - Assign a list of commands? **</li>
                         A feature in RCC is to send a list of commands to a Roku Device based on a key press of your device.  For example some Android devices has a "Thumbs Up" button that can launch an Android app.  You can assign Roku Commands to this button so that when you are within RCC and press that button, RCC will send those commands.  This is great as a commercial skipper(assign the Select command).
                         <br />
                         <br />
-                        <li class="fw-bold">Programmable Button - Device to send Commands to</li>
+                        <li class="fw-bold">Programmable Button - Device to send Commands to **</li>
                         This is another setting of the Programmable Button feature.  This setting you can make sure that your commands from pressing the Programmable Button go to a particular device.  If you have (none) selected, RCC will attempt to send the list of commands to the first On-line device it knows about.
                         <br />
                         <br />
-                        <li class="fw-bold">Programmable Button - Commands</li>
+                        <li class="fw-bold">Programmable Button - Commands **</li>
                         The final setting of the Programmable Button are the commands themselves. You can either type in the commands or use the Command List Builder to ensure command structure.
                         <br />
                         <br />
@@ -302,11 +298,11 @@
                         This setting may go away but the intent is to limit the number of fetches during the executing of some tasks.  For example the typical streaming commerical is no less than 15 seconds, so for the Commerical Counter task RCC will only fetch a Roku Device's status every 15 seconds.
                         <br />
                         <br />
-                        <li id="quicklaunchwidget" class="fw-bold"><a href="Widgets/quicklaunchwidget.html">Quick Launch Widget - Playable Item</a></li>
+                        <li id="quicklaunchwidget" class="fw-bold"><a href="Widgets/quicklaunchwidget.html">Quick Launch Widget - Playable Item</a> **</li>
                         If you create a Quick Launch Widget on one of your home screens, this is the Playable Item that will be launched.
                         <br />
                         <br />
-                        <li class="fw-bold"><a href="Widgets/quicklaunchwidget.html">Quick Launch Widget - Device</a></li>
+                        <li class="fw-bold"><a href="Widgets/quicklaunchwidget.html">Quick Launch Widget - Device</a> **</li>
                         If you create a Quick Launch Widget on one of your home screens, this is the Device your Playable Item that will be launched on.
                         <br />
                         <br />
@@ -322,7 +318,7 @@
                     <h2>FAQs</h2>
                     <ul>
                         <li class="fw-bold">Why can RCC not see my Roku Device?</li>
-                        If you are on the same private network and your Roku Device allows mobile control, you shouldn't run into issues.  If you still are, open a web browser on your device and enter the following URL [http://{your Roku's IP address}:8060/query/media-player].  If you do not get a web page in return, then something outside of the RCC app is preventing the app from communicating with the Roku Device.  Make sure 
+                        If you are on the same private network and your Roku Device allows mobile control, you shouldn't run into issues.  If you can't 'Discover' your device, try manually entering the IP Address.  If you still are having issues, open a web browser on your device and enter the following URL [http://{your Roku's IP address}:8060/query/media-player].  If you do not get a web page in return, then something outside of the RCC app is preventing the app from communicating with the Roku Device.  Make sure 
                         <a href="https://support.roku.com/article/115001480188">Control by Mobile Apps</a> is not disabled on your Roku Device.
                         <li class="fw-bold">RCC crashed while a task was running, the RCC Running Tasks notification is still in the tray and I cannot get rid of it. How can I remove it?</li>
                         On some devices you can access an app's notifications settings from the Notification Tray. If you can go there turn Notifications off and then if you want turn them back on.
