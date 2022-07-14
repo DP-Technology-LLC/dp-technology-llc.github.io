@@ -14,10 +14,9 @@
     <link href="Content/Site.css" rel="stylesheet" />
     <title>DP Technology LLC</title>
     <script>
-        //if (location.host.indexOf("roku")>= 0) { 
-        //window.location.href = "https://www.rokucc.com/RCC";
-        //}
-        alert(location.host);
+        if (location.host.indexOf("rokucc.com") >= 0 && location.search.indexOf("page=dptech") == -1) {
+            window.location.href = "https://www.rokucc.com/RCC";
+        }
 </script>
 </head>
 <body id="page-top">
